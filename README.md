@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![Publisher](https://img.shields.io/badge/Publisher-Digial_Discovery-green.svg)](https://arxiv.org/abs/2412.09333)
 [![ArXiv](https://img.shields.io/badge/ArXiv-2412.09333-b31b1b.svg)](https://arxiv.org/abs/2412.09333)
 [![DataGen Demo Website](https://img.shields.io/badge/DataGen-Demo-blue)](https://datagen.uslu.tech)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -17,21 +18,6 @@
 
 This repository hosts the code and related resources for the MaskTerial project, a robust Deep-Learning based model for real-time detection and classification of 2D material flakes.
 
-The paper can be found on ArXiv: [MaskTerial: A Foundation Model for Automated 2D Material Flake Detection](https://arxiv.org/abs/2412.09333)  
-For citations, please refer to the [Citing MaskTerial](#CitingMaskTerial) section below.
-
-<!-- ArXiv Paper DOI: [10.48550/arXiv.2412.09333](https://doi.org/10.48550/arXiv.2412.09333)  
-Code DOI: [10.5281/zenodo.14415557](https://doi.org/10.5281/zenodo.14415557)  
-Dataset DOI: [10.5281/zenodo.15765514](https://doi.org/10.5281/zenodo.15765514)  
-Pretrained Models DOI: [10.5281/zenodo.15765516](https://doi.org/10.5281/zenodo.15765516) -->
-
-| Resource | Badge | DOI | Link |
-|----------|-------|-----|------|
-| Paper | [![ArXiv](https://img.shields.io/badge/ArXiv-2412.09333-b31b1b.svg)](https://arxiv.org/abs/2412.09333) | 10.48550/arXiv.2412.09333 | [ArXiv](https://arxiv.org/abs/2412.09333) |
-| Code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14415557.svg)](https://doi.org/10.5281/zenodo.14415557) | 10.5281/zenodo.14415557 | [Zenodo](https://zenodo.org/records/14415557) |
-| Dataset | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15765514.svg)](https://doi.org/10.5281/zenodo.15765514) | 10.5281/zenodo.15765514 | [Zenodo](https://zenodo.org/records/15765514) |
-| Pretrained Models | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15765516.svg)](https://doi.org/10.5281/zenodo.15765516) | 10.5281/zenodo.15765516 | [Zenodo](https://zenodo.org/records/15765516) |
-
 ## Abstract
 
 The detection and classification of exfoliated two-dimensional (2D) material flakes from optical microscope images can be automated using computer vision algorithms.
@@ -42,6 +28,25 @@ The model is extensively pre-trained using a synthetic data generator, that gene
 This results in a model that can to quickly adapt to new materials with as little as 5 to 10 images.
 Furthermore, an uncertainty estimation model is used to finally classify the predictions based on optical contrast.
 We evaluate our method on eight different datasets comprising five different 2D materials and demonstrate significant improvements over existing techniques in the detection of low-contrast materials such as hexagonal boron nitride.
+
+## Updates
+
+**2025/11/03** MaskTerial Published!📚  
+The paper "MaskTerial: A Foundation Model for Automated 2D Material Flake Detection" has been published in Digital Discovery!
+You can find the paper on [ArXiv](https://arxiv.org/abs/2412.09333) and the published version in [Digital Discovery](https://doi.org/10.1039/D5DD00156K). For Citations, please refer to the [Citing MaskTerial](#CitingMaskTerial) section below.
+
+## Important Links
+
+The paper can be found on [ArXiv](https://arxiv.org/abs/2412.09333) and and has been published in [Digital Discovery](https://doi.org/10.1039/D5DD00156K).  
+For citations, please refer to the [Citing MaskTerial](#CitingMaskTerial) section below.
+
+| Resource | Badge | DOI | Link |
+|----------|-------|-----|------|
+| Published Paper | [![Publisher](https://img.shields.io/badge/Publisher-Digial_Discovery-green.svg)](https://doi.org/10.1039/D5DD00156K) | 10.1039/D5DD00156K | [Publisher](https://doi.org/10.1039/D5DD00156K) |
+| Arxiv Paper | [![ArXiv](https://img.shields.io/badge/ArXiv-2412.09333-b31b1b.svg)](https://arxiv.org/abs/2412.09333) | 10.48550/arXiv.2412.09333 | [ArXiv](https://arxiv.org/abs/2412.09333) |
+| Code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14415557.svg)](https://doi.org/10.5281/zenodo.14415557) | 10.5281/zenodo.14415557 | [Zenodo](https://zenodo.org/records/14415557) |
+| Dataset | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15765514.svg)](https://doi.org/10.5281/zenodo.15765514) | 10.5281/zenodo.15765514 | [Zenodo](https://zenodo.org/records/15765514) |
+| Pretrained Models | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15765516.svg)](https://doi.org/10.5281/zenodo.15765516) | 10.5281/zenodo.15765516 | [Zenodo](https://zenodo.org/records/15765516) |
 
 ## Features
 
@@ -209,14 +214,17 @@ If you use any of our code, the model, dataset, generated data or for detection 
 This helps to support the development of open-source tools and datasets in our field and encourages the publication of more tools.
 
 ```bibtex
-@article{uslu2024maskterial,
-    title={MaskTerial: A Foundation Model for Automated 2D Material Flake Detection},
-    author={Jan-Lucas Uslu and Alexey Nekrasov and Alexander Hermans and Bernd Beschoten and Bastian Leibe and Lutz Waldecker and Christoph Stampfer},
-    year={2024},
-    eprint={2412.09333},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2412.09333},
+@article{uslu2025maskterial,
+  author    = {Uslu, Jan-Lucas and Nekrasov, Alexey and Hermans, Alexander and Beschoten, Bernd and Leibe, Bastian and Waldecker, Lutz and Stampfer, Christoph},
+  title     = {MaskTerial: a foundation model for automated 2D material flake detection},
+  journal   = {Digital Discovery},
+  year      = {2025},
+  volume    = {4},
+  issue     = {12},
+  pages     = {3744-3752},
+  publisher = {RSC},
+  doi       = {10.1039/D5DD00156K},
+  url       = {http://dx.doi.org/10.1039/D5DD00156K},
 }
 ```
 
