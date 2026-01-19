@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Publisher](https://img.shields.io/badge/Publisher-Digial_Discovery-green.svg)](https://arxiv.org/abs/2412.09333)
+[![Publisher](https://img.shields.io/badge/Publisher-Digial_Discovery-green.svg)](https://doi.org/10.1039/D5DD00156K)
 [![ArXiv](https://img.shields.io/badge/ArXiv-2412.09333-b31b1b.svg)](https://arxiv.org/abs/2412.09333)
 [![DataGen Demo Website](https://img.shields.io/badge/DataGen-Demo-blue)](https://datagen.uslu.tech)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
