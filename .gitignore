@@ -63,4 +63,4 @@ model_ts*.txt
 _darcs
 
 
-wandb
+wandbdata/
