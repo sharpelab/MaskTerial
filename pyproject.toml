@@ -1,0 +1,63 @@
+[project]
+name = "maskterial"
+version = "0.1.0"
+description = "A package for detecting 2D Material flakes"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Jan-Lucas Uslu", email = "janlucas.uslu@gmail.com" }]
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=2.1",
+    "opencv-python>=4.10",
+    "matplotlib>=3.10",
+    "cython>=3.0",
+    "scipy>=1.14",
+    "shapely>=2.0",
+    "timm>=1.0",
+    "h5py>=3.12",
+    "submitit>=1.5",
+    "scikit-image>=0.24",
+    "numba>=0.60",
+    "scikit-learn>=1.5",
+    "wandb>=0.18",
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+    "python-multipart>=0.0.17",
+    "pycocotools>=2.0",
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "multiscaledeformableattention==1.0+9b0651cpt2.5.1cu118",
+]
+
+[project.optional-dependencies]
+dev = ["jupyter"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["maskterial"]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true
+
+[[tool.uv.index]]
+name = "torch-packages"
+url = "https://miropsota.github.io/torch_packages_builder"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu118" }
+torchvision = { index = "pytorch-cu118" }
+multiscaledeformableattention = { index = "torch-packages" }
+detectron2 = { git = "https://github.com/facebookresearch/detectron2.git", rev = "8d85329aed8506ea3672e3e208971345973ea761" }
+panopticapi = { git = "https://github.com/cocodataset/panopticapi.git", rev = "7bb4655548f98f3fedc07bf37e9040a992b054b0" }
+cityscapesscripts = { git = "https://github.com/mcordts/cityscapesScripts.git", rev = "067792b80e446e809dd5516ee80d39fa92e18269" }
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+]
